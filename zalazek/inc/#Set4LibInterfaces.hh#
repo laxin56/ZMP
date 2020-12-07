@@ -1,0 +1,51 @@
+#ifndef  SET4LIBINTERFACES_HH
+#define  SET4LIBINTERFACES_HH
+
+#include <iostream>
+#include <map>
+#include <string>
+#include <memory>
+#include "LibInterface.hh"
+
+class Set4LibInterfaces 
+{
+  
+    std::map<std::string, std::shared_ptr<LibInterface>> set4LibInterfaces;
+  
+public:
+    Set4LibInterfaces();
+    std::shared_ptr<LibInterface> findInterface(const std::string& library);
+    bool addInterface(const std::string& lib_name);
+    ~Set4LibInterfaces();
+};
+
+Set4LibInterfaces::Set4LibInterfaces()
+{}
+
+std::shared_ptr<LibInterface> Set4LibInterfaces::findInterface(const std::string& lib_name)
+{
+  std::map<std::__cxx11::basic_string<char>, std::shared_ptr<LibInterface> >::iterator _iter = set4LibInterfaces.find(lib_name);
+    if (_iter != set4LibInterfaces.end())
+    {
+        return _iter->second;
+    }
+    
+    return nullptr;
+}
+
+bool Set4LibInterfaces::addInterface(const std::string& lib_name)
+{
+    std::shared_ptr<LibInterface> lib_interface = std::make_shared<LibInterface>();
+    if(!lib_interface->initInterface(lib_name))
+    {
+        return false;
+    }
+    set4LibInterfaces.insert({lib_name, lib_interface});
+    return true;
+}
+
+Set4LibInterfaces::~Set4LibInterfaces()
+{}
+
+
+#endif

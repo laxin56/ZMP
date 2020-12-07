@@ -1,0 +1,5 @@
+<map id="Interp4Command::PrintSyntax" name="Interp4Command::PrintSyntax">
+<area shape="rect" id="node2" href="$classLibInterface.html#aab6ce60dad4ba8b3dc01cd4ec81e37d0" title="Metoda wczytuje polecenia do strumienia i je wypisuje. " alt="" coords="251,5,417,32"/>
+<area shape="rect" id="node4" href="$classInterp4Command.html#a620ba28206850d0bce8dbb2364c73366" title="Destruktor wirtualny ze wzgledu na klasy pochodne. " alt="" coords="247,57,421,98"/>
+<area shape="rect" id="node3" href="$classLibInterface.html#adf64dbf24f4cc448f0075481a838ae40" title="Destruktor Zamyka biblioteke. " alt="" coords="469,5,640,32"/>
+</map>

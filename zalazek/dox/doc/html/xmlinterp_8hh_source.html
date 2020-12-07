@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Interpreter: Plik źródłowy xmlinterp.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Interpreter
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('xmlinterp_8hh_source.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">xmlinterp.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="xmlinterp_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef XMLINTERP4ACTIONS_HH</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define XMLINTERP4ACTIONS_HH</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;xercesc/util/XMLString.hpp&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//#include &lt;xercesc/sax2/XMLReaderFactory.hpp&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;xercesc/util/PlatformUtils.hpp&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;xercesc/sax/Locator.hpp&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;xercesc/sax2/Attributes.hpp&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;xercesc/sax2/DefaultHandler.hpp&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classXMLInterp4Config.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classXMLInterp4Config.html">XMLInterp4Config</a> : <span class="keyword">public</span> xercesc::DefaultHandler {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="comment">//XMLInterp4Config(Configuration &amp;rConfig);</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<a class="code" href="classXMLInterp4Config.html#ac1533ba4f7bee188d0bc3dccaeca7c21">XMLInterp4Config</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classXMLInterp4Config.html#affa1d4151a931ef3420a90ac1832e936">startDocument</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classXMLInterp4Config.html#adf49a6fe594f903fb9062314827bab30">endDocument</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classXMLInterp4Config.html#a8a94957342f5d9164b718453cbfe8511">startElement</a>(</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    <span class="keyword">const</span> XMLCh *<span class="keyword">const</span> pURI, </div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    <span class="keyword">const</span> XMLCh *<span class="keyword">const</span> pLocalName, </div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    <span class="keyword">const</span> XMLCh *<span class="keyword">const</span> pQNname,</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="keyword">const</span>   xercesc::Attributes&amp;     attrs</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                  ) <span class="keyword">override</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span>  <span class="keywordtype">void</span> <a class="code" href="classXMLInterp4Config.html#aeb411a4c43a91d6b586f7222dfb03ba8">endElement</a>(</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    <span class="keyword">const</span> XMLCh *<span class="keyword">const</span> pURI, </div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    <span class="keyword">const</span> XMLCh *<span class="keyword">const</span> pLocalName, </div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    <span class="keyword">const</span> XMLCh *<span class="keyword">const</span> pQNname</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                   ) <span class="keyword">override</span>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classXMLInterp4Config.html#a83074b530c3eabf8eaf74ed211987567">fatalError</a>(<span class="keyword">const</span> xercesc::SAXParseException&amp;);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classXMLInterp4Config.html#a745a7bf2400f4e2be6f372002f492346">error</a>(<span class="keyword">const</span> xercesc::SAXParseException &amp;exc);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classXMLInterp4Config.html#a23b3602117802bb111ce9abd0ade8185">warning</a>(<span class="keyword">const</span> xercesc::SAXParseException &amp;exc);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classXMLInterp4Config.html#a70c9a5eaf507576a6461b3869b3f5c4f">WhenStartElement</a>( <span class="keyword">const</span> std::string&amp;             ElemName,</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                           <span class="keyword">const</span> xercesc::Attributes&amp;     Attrs</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                         );</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classXMLInterp4Config.html#a6f16ed80b69248daed05fd5d80961877">ProcessLibAttrs</a>(<span class="keyword">const</span> xercesc::Attributes&amp;   Attrs);</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classXMLInterp4Config.html#a74b1452f81364fcb1fcd27a0b50ee98e">ProcessCubeAttrs</a>(<span class="keyword">const</span> xercesc::Attributes&amp;   Attrs); </div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classXMLInterp4Config_html"><div class="ttname"><a href="classXMLInterp4Config.html">XMLInterp4Config</a></div><div class="ttdoc">Implementuje reakcje na napotkane elementu opisu akcji. </div><div class="ttdef"><b>Definition:</b> <a href="xmlinterp_8hh_source.html#l00028">xmlinterp.hh:28</a></div></div>
+<div class="ttc" id="classXMLInterp4Config_html_a745a7bf2400f4e2be6f372002f492346"><div class="ttname"><a href="classXMLInterp4Config.html#a745a7bf2400f4e2be6f372002f492346">XMLInterp4Config::error</a></div><div class="ttdeci">void error(const xercesc::SAXParseException &amp;exc)</div><div class="ttdoc">Wywoływana jest gdy napotkany zostanie błąd. </div><div class="ttdef"><b>Definition:</b> <a href="xmlinterp_8cpp_source.html#l00279">xmlinterp.cpp:279</a></div></div>
+<div class="ttc" id="classXMLInterp4Config_html_a8a94957342f5d9164b718453cbfe8511"><div class="ttname"><a href="classXMLInterp4Config.html#a8a94957342f5d9164b718453cbfe8511">XMLInterp4Config::startElement</a></div><div class="ttdeci">virtual void startElement(const XMLCh *const pURI, const XMLCh *const pLocalName, const XMLCh *const pQNname, const xercesc::Attributes &amp;attrs) override</div><div class="ttdoc">Wywoływana jest po napotkaniu nowego elementu XML. </div><div class="ttdef"><b>Definition:</b> <a href="xmlinterp_8cpp_source.html#l00199">xmlinterp.cpp:199</a></div></div>
+<div class="ttc" id="classXMLInterp4Config_html_a74b1452f81364fcb1fcd27a0b50ee98e"><div class="ttname"><a href="classXMLInterp4Config.html#a74b1452f81364fcb1fcd27a0b50ee98e">XMLInterp4Config::ProcessCubeAttrs</a></div><div class="ttdeci">void ProcessCubeAttrs(const xercesc::Attributes &amp;Attrs)</div><div class="ttdoc">Analizuje atrybuty i odpwiednio je interpretuje. </div><div class="ttdef"><b>Definition:</b> <a href="xmlinterp_8cpp_source.html#l00090">xmlinterp.cpp:90</a></div></div>
+<div class="ttc" id="classXMLInterp4Config_html_ac1533ba4f7bee188d0bc3dccaeca7c21"><div class="ttname"><a href="classXMLInterp4Config.html#ac1533ba4f7bee188d0bc3dccaeca7c21">XMLInterp4Config::XMLInterp4Config</a></div><div class="ttdeci">XMLInterp4Config()</div><div class="ttdoc">Inicjalizuje obiekt i kojarzy go z listą poleceń robota. </div><div class="ttdef"><b>Definition:</b> <a href="xmlinterp_8cpp_source.html#l00027">xmlinterp.cpp:27</a></div></div>
+<div class="ttc" id="classXMLInterp4Config_html_a70c9a5eaf507576a6461b3869b3f5c4f"><div class="ttname"><a href="classXMLInterp4Config.html#a70c9a5eaf507576a6461b3869b3f5c4f">XMLInterp4Config::WhenStartElement</a></div><div class="ttdeci">void WhenStartElement(const std::string &amp;ElemName, const xercesc::Attributes &amp;Attrs)</div><div class="ttdoc">Wykonuje operacje związane z danym elementem XML. </div><div class="ttdef"><b>Definition:</b> <a href="xmlinterp_8cpp_source.html#l00166">xmlinterp.cpp:166</a></div></div>
+<div class="ttc" id="classXMLInterp4Config_html_a23b3602117802bb111ce9abd0ade8185"><div class="ttname"><a href="classXMLInterp4Config.html#a23b3602117802bb111ce9abd0ade8185">XMLInterp4Config::warning</a></div><div class="ttdeci">void warning(const xercesc::SAXParseException &amp;exc)</div><div class="ttdoc">Wywoływana jest gdy parser sygnalizuje ostrzeżenie. </div><div class="ttdef"><b>Definition:</b> <a href="xmlinterp_8cpp_source.html#l00293">xmlinterp.cpp:293</a></div></div>
+<div class="ttc" id="classXMLInterp4Config_html_a6f16ed80b69248daed05fd5d80961877"><div class="ttname"><a href="classXMLInterp4Config.html#a6f16ed80b69248daed05fd5d80961877">XMLInterp4Config::ProcessLibAttrs</a></div><div class="ttdeci">void ProcessLibAttrs(const xercesc::Attributes &amp;Attrs)</div><div class="ttdoc">Analizuje atrybuty i odpwiednio je interpretuje. </div><div class="ttdef"><b>Definition:</b> <a href="xmlinterp_8cpp_source.html#l00059">xmlinterp.cpp:59</a></div></div>
+<div class="ttc" id="classXMLInterp4Config_html_adf49a6fe594f903fb9062314827bab30"><div class="ttname"><a href="classXMLInterp4Config.html#adf49a6fe594f903fb9062314827bab30">XMLInterp4Config::endDocument</a></div><div class="ttdeci">virtual void endDocument() override</div><div class="ttdoc">Wywoływana jest na końcu dokumentu. </div><div class="ttdef"><b>Definition:</b> <a href="xmlinterp_8cpp_source.html#l00046">xmlinterp.cpp:46</a></div></div>
+<div class="ttc" id="classXMLInterp4Config_html_affa1d4151a931ef3420a90ac1832e936"><div class="ttname"><a href="classXMLInterp4Config.html#affa1d4151a931ef3420a90ac1832e936">XMLInterp4Config::startDocument</a></div><div class="ttdeci">virtual void startDocument() override</div><div class="ttdoc">Wywoływana jest na początku dokumentu. </div><div class="ttdef"><b>Definition:</b> <a href="xmlinterp_8cpp_source.html#l00036">xmlinterp.cpp:36</a></div></div>
+<div class="ttc" id="classXMLInterp4Config_html_a83074b530c3eabf8eaf74ed211987567"><div class="ttname"><a href="classXMLInterp4Config.html#a83074b530c3eabf8eaf74ed211987567">XMLInterp4Config::fatalError</a></div><div class="ttdeci">void fatalError(const xercesc::SAXParseException &amp;)</div><div class="ttdoc">Wywoływana jest gdy napotkany zostanie błąd fatalny. </div><div class="ttdef"><b>Definition:</b> <a href="xmlinterp_8cpp_source.html#l00255">xmlinterp.cpp:255</a></div></div>
+<div class="ttc" id="classXMLInterp4Config_html_aeb411a4c43a91d6b586f7222dfb03ba8"><div class="ttname"><a href="classXMLInterp4Config.html#aeb411a4c43a91d6b586f7222dfb03ba8">XMLInterp4Config::endElement</a></div><div class="ttdeci">virtual void endElement(const XMLCh *const pURI, const XMLCh *const pLocalName, const XMLCh *const pQNname) override</div><div class="ttdoc">Wywoływana jest po dojściu do końca elementu XML. </div><div class="ttdef"><b>Definition:</b> <a href="xmlinterp_8cpp_source.html#l00233">xmlinterp.cpp:233</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="xmlinterp_8hh.html">xmlinterp.hh</a></li>
+    <li class="footer">Wygenerowano Wt, 24 lis 2020 17:20:25 dla Interpreter programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

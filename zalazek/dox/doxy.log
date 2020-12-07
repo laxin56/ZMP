@@ -1,0 +1,20 @@
+warning: ignoring unsupported tag `TOC_INCLUDE_HEADINGS   =' at line 313, file Doxyfile
+warning: ignoring unsupported tag `PLANTUML_CFG_FILE      =' at line 2422, file Doxyfile
+warning: doxygen no longer ships with the FreeSans font.
+You may want to clear or change DOT_FONTNAME.
+Otherwise you run the risk that the wrong font is being used for dot generated graphs.
+warning: The selected output language "polish" has not been updated
+since release 1.8.2.  As a result some sentences may appear in English.
+
+/home/patryk/z1/zalazek/src/main.cpp:28: warning: argument 'CmdList' of command @param is not found in the argument list of ReadFile(const char *sFileName)
+/home/patryk/z1/zalazek/src/xmlinterp.cpp:22: warning: expected whitespace after param command
+/home/patryk/z1/zalazek/src/xmlinterp.cpp:224: warning: Unsupported xml/html tag </Lib> found
+/home/patryk/z1/zalazek/inc/xmlinterp.hh:58: warning: The following parameters of XMLInterp4Config::endElement(const XMLCh *const pURI, const XMLCh *const pLocalName, const XMLCh *const pQName) are not documented:
+  parameter 'pURI'
+  parameter 'pQName'
+/home/patryk/z1/zalazek/src/xmlinterp.cpp:272: warning: argument 'Except' of command @param is not found in the argument list of XMLInterp4Config::error(const xercesc::SAXParseException &Exception)
+/home/patryk/z1/zalazek/inc/xmlinterp.hh:70: warning: The following parameters of XMLInterp4Config::error(const xercesc::SAXParseException &Exception) are not documented:
+  parameter 'Exception'
+/home/patryk/z1/zalazek/inc/xmlinterp.hh:48: warning: The following parameters of XMLInterp4Config::startElement(const XMLCh *const pURI, const XMLCh *const pLocalName, const XMLCh *const pQNname, const xercesc::Attributes &Attrs) are not documented:
+  parameter 'pURI'
+  parameter 'pQNname'

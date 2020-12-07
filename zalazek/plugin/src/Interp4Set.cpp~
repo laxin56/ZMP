@@ -1,0 +1,92 @@
+#include <iostream>
+#include "Interp4Set.hh"
+#include "MobileObj.hh"
+
+using std::cout;
+using std::endl;
+
+
+extern "C" {
+ Interp4Command* CreateCmd(void);
+  const char* GetCmdName() { return "Set"; }
+}
+
+
+
+
+/*!
+ * \brief
+ *
+ *
+ */
+Interp4Command* CreateCmd(void)
+{
+  return Interp4Set::CreateCmd();
+}
+
+
+/*!
+ *
+ */
+Interp4Set::Interp4Set(): _Coo_X_m(0), _Coo_Y_m(0), _Angle_OZ_deg(0)
+{}
+
+
+/*!
+ *
+ */
+void Interp4Set::PrintCmd() const
+{
+  cout << GetCmdName() << " \t\t\t\t " << _Coo_X_m << " \t " << _Coo_Y_m << " \t " << _Angle_OZ_deg << endl;
+}
+
+
+/*!
+ *
+ */
+const char* Interp4Set::GetCmdName() const
+{
+  return ::GetCmdName();
+}
+
+
+/*!
+ *
+ */
+bool Interp4Set::ExecCmd( MobileObj  *pMobObj,  int  Socket) const
+{
+  /*
+   *  Tu trzeba napisać odpowiedni kod.
+   */
+  return true;
+}
+
+
+/*!
+ *
+ */
+bool Interp4Set::ReadParams(std::istream& Strm_CmdsList)
+{
+
+	Strm_CmdsList >> _Coo_X_m >> _Coo_Y_m >> _Angle_OZ_deg;
+	return !Strm_CmdsList.fail();
+
+}
+
+
+/*!
+ *
+ */
+Interp4Command* Interp4Set::CreateCmd()
+{
+  return new Interp4Set();
+}
+
+
+/*!
+ *
+ */
+void Interp4Set::PrintSyntax() const
+{
+  cout << "   Set  NazwaObiektu  WspolrzednaX[m]  WspolrzednaY[m] KatOZ [st]" << endl;
+}
